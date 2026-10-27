@@ -1,0 +1,13 @@
+# Variables de entorno con credenciales reales
+.env
+
+# Dependencias
+node_modules/
+
+# Archivos de registro
+*.log
+npm-debug.log*
+
+# Sistema
+.DS_Store
+Thumbs.db

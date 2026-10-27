@@ -1,0 +1,37 @@
+/* Estilos exclusivos de impresión: se muestra solo el comprobante */
+@media print {
+  body {
+    background: #fff;
+  }
+
+  /* Oculta todo excepto el comprobante */
+  body * {
+    visibility: hidden;
+  }
+
+  #comprobante,
+  #comprobante * {
+    visibility: visible;
+  }
+
+  #comprobante {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    max-width: 100%;
+    border: none;
+    box-shadow: none;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .comprobante__totales {
+    max-width: 320px;
+  }
+
+  @page {
+    margin: 14mm;
+  }
+}
